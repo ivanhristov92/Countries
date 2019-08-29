@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "downshift": "^3.2.12",
+    "fuse.js": "^3.4.5",
     "moment": "^2.24.0",
     "ramda": "^0.26.1",
     "react": "^16.9.0",
@@ -11,7 +15,8 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "0.9.5",
     "recharts": "^1.7.1",
-    "superagent": "^5.1.0"
+    "superagent": "^5.1.0",
+    "typeface-roboto": "0.0.75"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*Breadcrumbs*/
+.breadcrumbs {
+  padding: 30px 0;
+  background: lightslategray;
+  color: white;
+}
+.breadcrumbs a {
+  color: white;
+}
+
+
+/* Country List */
+
+.country-list-container {
+  height: 500px;
+  overflow-y: scroll;
+  text-align: left;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  padding-top: 10px;
+
+}
+table.country-list {
+  border-collapse: collapse;
+}
+
+table.country-list th {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+
+span {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+
+
+td {
+  color: rgba(0, 0, 0, 0.87) !important;
+  font-weight: 400 !important;
+  font-size: 14px;
+  padding-bottom: 14px;
+  /*padding-left: 16px;*/
+  padding-right: 40px;
+  padding-top: 14px;
+  /* text-align: right; */
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+img.flag {
+  width: 200px;
+}
+
+ul.currencies {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+tr td:first-of-type, tr th:first-of-type {
+  padding-left: 16px;
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.suggestion, option {
+  padding-left: 16px;
+  font-weight: 400;
+  padding-right: 16px;
+  width: auto;
+  overflow: hidden;
+  font-size: 1rem;
+  box-sizing: border-box;
+  min-height: 48px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  padding-top: 4px;
+  white-space: nowrap;
+  letter-spacing: 0.00938em;
+  padding-bottom: 4px;
+}
+
+thead {
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+input.react-autosuggest__input.react-autosuggest__input--focused, .country-list input[type="number"]:focus, select:focus  {
+  border-bottom: 2px solid rgb(17, 82, 147);
+}
+
+
+
+/*Pagination*/
+.pagination-controls {
+  background: white;
+  padding: 20px;
+  margin-top: 12px;
+  text-align: center;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.pagination-controls * {
+  display: inline;
+}
+.pagination-controls span {
+  padding: 0 10px;
+}
+.sorting-and-filtering-controls{
+  padding-top: 20px;
+  text-align: left;
+}
+
+.pagination-controls input {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: center;
+}
+
+
+/**
+ Autosuggest
+ */
+.react-autosuggest__suggestions-container {
+  max-height: 200px;
+  position: absolute;
+  overflow-y: scroll;
+  background: white;
+}
+
+.react-autosuggest__suggestions-container ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  width: 200px;
+}
+
+input.react-autosuggest__input {
+  width: 200px;
+}
+
+.react-autosuggest__suggestion.react-autosuggest__suggestion--highlighted{
+  background-color: rgba(0, 0, 0, 0.07);
+  color: rgba(0, 0, 0, 0.87);
+}
+.react-autosuggest__container {
+  position: relative;
+}
+
+input.react-autosuggest__input, .country-list input[type="number"], select {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1875em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  -webkit-tap-highlight-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+}
+
+input.react-autosuggest__input.react-autosuggest__input--focused, .country-list input[type="number"]:focus, select:focus {
+  outline:  none;
+}
+.react-autosuggest__suggestions-container.react-autosuggest__suggestions-container--open {
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 3px;
+}
+
+
+
+
+/**
+Bar Chart And Controls
+ */
+
+.bar-chart-and-controls-container {
+  padding: 30px 0;
+  position: relative;
+  padding-top: 100px;
+}
+
+.bar-chart-controls {
+  display: inline;
+  width: 49%;
+  float: left
+}
+
+
+.bar-chart-controls select {
+  border: 0;
+  height: 1.1875em;
+  margin: 0 10px 0 0 !important;
+  /* display: block; */
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  -webkit-tap-highlight-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.region-row {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.region-row select {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.click-to-add-a-row {
+  padding: 10px;
+}
+
+.recharts-wrapper {
+  display: inline;
+  float: right;
+  width: 49% !important;
+  overflow: scroll;
+}
+
+h2.population-barchart {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.00735em;
+}
+
+
+
+.details-table {
+  margin: 0 auto;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 3px;
+}
+
+.details-table-container {
+  padding: 50px;
+}
+
+.go-back-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-weight: 400;
+  text-transform: none;
+  /* padding: 8px 24px; */
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.go-back-link svg {
+  height: 14px;
+}
+
+
+
+
+/* Responsiveness*/
+@media only screen and (max-width: 600px) {
+
+  .pagination-controls_total-pages {
+    display: block;
+  }
+
+  .bar-chart-controls {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  .recharts-wrapper{
+    position: relative;
+    cursor: default;
+      width: 100% !important;
+    height: 300px;
+    margin-top: 40px;
+    overflow: scroll;
+  }
+
+  .add-row-button-container {
+    text-align: center;
+  }
+
+  h2.population-barchart {
+    text-align: center;
+  }
+
+  .region-row {
+    padding: 20px;
+  }
+
+  .details-table-container {
+    padding: 0;
+    overflow: scroll;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import Autosuggest from "react-autosuggest";
 
-export default class Example extends React.Component {
+export default class MyAutosuggest extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

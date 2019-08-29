@@ -19,9 +19,24 @@ function getPersistedBarChartControlsData() {
   return data && JSON.parse(data);
 }
 
+function generateId() {
+  let ID_KEY = "uniqueId";
+  let lastId = Number(localStorage.getItem(ID_KEY));
+  if (!isNaN(lastId)) {
+    let newId = lastId + 1;
+    localStorage.setItem(ID_KEY, newId);
+    return newId;
+  } else {
+    let newId = "0";
+    localStorage.setItem(ID_KEY, newId);
+    return newId;
+  }
+}
+
 export default {
   persistBarChartData,
   getPersistedBarChartData,
   persistBarChartControlsData,
-  getPersistedBarChartControlsData
+  getPersistedBarChartControlsData,
+  generateId
 };
